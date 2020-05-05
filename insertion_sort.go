@@ -2,13 +2,13 @@ package main
 
 // Сортировка вставками
 func main() {
-	arr := []int{9, 8, 7, 6, 5, 4, 3, 2, 1}
-	arr = insertion_sort(arr)
+	arr := []int{9, 9, 8, 7, 7, 6, 6, 5, 5, 4, 3, 2, 1, 10}
+	arr = insertionSort(arr)
 	for i := 0; i < len(arr); i++ {
 		print(arr[i], ",")
 	}
 }
-func insertion_sort(a []int) []int {
+func insertionSort(a []int) []int {
 	for i := 1; i < len(a); i++ {
 		j := i - 1
 		value := a[i]

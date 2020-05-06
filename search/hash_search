@@ -1,0 +1,21 @@
+Поиск на основе хеша
+Наилучший и средний случаи: 0(1); наихудший случай: 0(п)
+loadTable (size, С)
+    Н = новый массив заданного размера
+    foreach е in С do
+        h = hash(e)
+        if H[h] пуст then
+            H[h] = new Linked List
+            добавить e в H[h]
+        return A
+end
+
+search (H, t)
+    h = hash(t)
+    list = H[h]
+    if list пуст then
+        return false
+    if list содержит t then
+        return true
+    return false
+end

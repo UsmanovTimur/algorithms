@@ -49,9 +49,5 @@ func heapSort(slice []int) []int {
 
 func main() {
 	s := []int{4, 1, 3, 2, 16, 9, 10, 14, 8, 7}
-	//h := BuildMaxHeap(s)
-	//fmt.Println(h)
-
-	s = heapSort(s)
-	fmt.Println(s)
+	fmt.Printf("%v\n", s)
 }

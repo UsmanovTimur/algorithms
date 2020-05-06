@@ -1,14 +1,15 @@
 package main
 
-import "math/rand"
+import (
+	"fmt"
+	"math/rand"
+)
 
 // Быстрая сортировка
 func main() {
 	arr := []int{9, 8, 7, 6, 5, 4, 3, 2, 1, 10}
 	arr = quicksort(arr)
-	for i := 0; i < len(arr); i++ {
-		print(arr[i], ",")
-	}
+	fmt.Printf("%v\n", arr)
 }
 func quicksort(a []int) []int {
 	if len(a) < 2 {

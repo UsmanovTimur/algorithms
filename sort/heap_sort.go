@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 // Сортировка кучей, Пирамидальная сортировка
 type MaxHeap struct {
 	slice    []int
@@ -45,9 +43,4 @@ func heapSort(slice []int) []int {
 		h.MaxHeapify(0)
 	}
 	return h.slice
-}
-
-func main() {
-	s := []int{4, 1, 3, 2, 16, 9, 10, 14, 8, 7}
-	fmt.Printf("%v\n", s)
 }

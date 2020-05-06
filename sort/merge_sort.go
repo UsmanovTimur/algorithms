@@ -1,13 +1,6 @@
 package main
 
-import "fmt"
-
 // Сортировка слиянием
-func main() {
-	arr := []int{9, 8, 7, 6, 5, 4, 3, 2, 1, 10}
-	arr = mergeSort(arr)
-	fmt.Printf("%v\n", arr)
-}
 func mergeSort(items []int) []int {
 	var num = len(items)
 

@@ -1,15 +1,6 @@
 package main
 
-import "fmt"
-
 // Блочная сортировка
-func main() {
-	array := []int{4, 1, 1, 3, 2, 2, 7, -6, 0}
-	fmt.Printf("Before Bucket Sort %v\n", array)
-	array = bucketSort(array, 5)
-	fmt.Printf("After Bucket Sort %v\n", array)
-}
-
 func bucketSort(array []int, bucketSize int) []int {
 	var max, min int
 	for _, n := range array {
